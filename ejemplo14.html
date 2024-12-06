@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Costo de Viaje</title>
+    <link rel="stylesheet" href="assets/css/14.css">
+</head>
+<body>
+    <div class="menu">
+
+        <li><ul>
+          <a href="index.html">Volver al inicio</a>
+        </ul></li>
+      </div>
+    <div class="contenedor">
+        
+        <h1>Calculadora de Costo de Viaje</h1>
+        <p> El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto
+            debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son
+            100 alumnos o más, el costo por cada alumno es de $6.500; de 50 a 99 alumnos, el costo es
+            de $7.000, de 30 a 49, de $9.500, y si son menos de 30, el costo de la renta del autobús es de
+            $400.000 dividido entre los alumnos.</p>
+        <form id="formulario">
+            <label for="numeroAlumnos">Número de Alumnos:</label>
+            <input type="number" id="numeroAlumnos" name="numeroAlumnos" required>
+            
+            <button type="button" onclick="calcularCosto()">Calcular</button>
+        </form>
+        
+        <div id="resultado">
+            <p id="mensaje"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/ejemplo14.js"></script>
+</body>
+</html>

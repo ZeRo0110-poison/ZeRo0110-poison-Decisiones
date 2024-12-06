@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Agua</title>
+    <link rel="stylesheet" href="assets/css/11.css">
+</head>
+<body>
+    <div class="menu">
+
+        <li><ul>
+          <a href="index.html">Volver al inicio</a>
+        </ul></li>
+      </div>
+    <div class="contenedor">
+        <h1>Calculadora de Consumo de Agua</h1>
+        <p>La empresa de servicios públicos de nuestra ciudad calcula la factura del consumo de agua de
+            acuerdo con la tabla de estratos adjunta. Se requiere determinar el pago que debe realizar una
+            persona por el total de metros cúbicos que consume al llenar una piscina (ver figura), la
+            liquidación consiste en multiplicar los metros cúbicos por el valor del metro de acuerdo con el
+            estrato correspondiente. Realice una WebApp que solucione dicho problema. </p>
+            <img src=" " alt="Foto estrato y piscina">
+
+        <label for="estrato">Selecciona el estrato:</label>
+        <select id="estrato" required>
+            <option value="5000">Estrato 1 - $5,000/m³</option>
+            <option value="6500">Estrato 2 - $6,500/m³</option>
+            <option value="7000">Estrato 3 - $7,000/m³</option>
+            <option value="8000">Estrato 4 - $8,000/m³</option>
+            <option value="9200">Estrato 5 - $9,200/m³</option>
+        </select>
+
+        <label for="altura">Altura de la piscina (metros):</label>
+        <input type="number" name="altura" id="altura" placeholder="Ej. 2" min="0" required>
+
+        <label for="longitud">Longitud de la piscina (metros):</label>
+        <input type="number" name="longitud" id="longitud" placeholder="Ej. 5" min="0" required>
+
+        <label for="ancho">Ancho de la piscina (metros):</label>
+        <input type="number" name="ancho" id="ancho" placeholder="Ej. 3" min="0" required>
+
+        <button type="button" onclick="calcular()">Calcular</button>
+
+        <div id="resultado"></div>
+    </div>
+    <script src="assets/js/ejemplo11.js"></script>
+</body>
+</html>

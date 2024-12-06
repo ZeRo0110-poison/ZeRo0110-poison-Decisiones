@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> La Langosta Ahumada</title>
+    <link rel="stylesheet" href="assets/css/12.css">
+</head>
+<body>
+    <div class="menu">
+
+        <li><ul>
+          <a href="index.html">Volver al inicio</a>
+        </ul></li>
+      </div>
+    <div class="contenedor">
+        <h1>Calculadora de Presupuesto</h1>
+        <p>“La langosta ahumada” es una empresa dedicada a ofrecer banquetes; sus tarifas son las
+            siguientes: el costo de platillo por persona es de $14.000, pero si el número de personas es
+            mayor a 200 pero menor o igual a 300, el costo es de $11.000. Para más de 300 personas el
+            costo por platillo es de $9.000. Se requiere una WebApp que ayude a determinar el
+            presupuesto que se debe presentar a los clientes que deseen realizar un evento.</p>
+        <form id="formulario">
+            <label for="numeroPersonas">Número de Personas:</label>
+            <input type="number" id="numeroPersonas" name="numeroPersonas" required>
+            
+            <button type="button" onclick="calcularPresupuesto()">Calcular</button>
+        </form>
+        
+        <div id="resultado">
+            <p id="mensaje"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/ejemplo12.js"></script>
+</body>
+</html>

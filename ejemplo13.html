@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora  Embarque - Vinicultores</title>
+    <link rel="stylesheet" href="assets/css/13.css">
+</head>
+<body>
+    <div class="menu">
+
+        <li><ul>
+          <a href="index.html">Volver al inicio</a>
+        </ul></li>
+      </div>
+    <div class="contenedor">
+        <h1>Calculadora de Valor de Embarque</h1>
+        <p> La asociación de vinicultores tiene como política fijar un precio inicial al kilo de uva, la cual se
+            clasifica en tipos A y B, y además en tamaños 1 y 2. Cuando se realiza la venta del producto,
+            ésta es de un solo tipo y tamaño, se requiere determinar cuánto recibirá un productor por los
+            kilos de uva que entrega en un embarque, considerando lo siguiente: si es de tipo A, se le
+            cargan $2000 al precio inicial cuando es de tamaño 1; y 1000 si es de tamaño 2. Si es de tipo
+            B, se rebajan $500 cuando es de tamaño 1, y $900 cuando es de tamaño 2. (Considere un valor
+            inicial del kilo de uva de $ 2000, deberá calcular el valor total del embarque).</p>
+        <form id="formulario">
+            <label for="tipoUva">Tipo de Uva:</label>
+            <select id="tipoUva" name="tipoUva" required>
+                <option value="A">Tipo A</option>
+                <option value="B">Tipo B</option>
+            </select>
+
+            <label for="tamanoUva">Tamaño de Uva:</label>
+            <select id="tamanoUva" name="tamanoUva" required>
+                <option value="1">Tamaño 1</option>
+                <option value="2">Tamaño 2</option>
+            </select>
+
+            <label for="kilos">Kilos Entregados:</label>
+            <input type="number" id="kilos" name="kilos" required>
+
+            <button type="button" onclick="calcularValor()">Calcular</button>
+        </form>
+        
+        <div id="resultado">
+            <p id="mensaje"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/ejemplo13.js"></script>
+</body>
+</html>
